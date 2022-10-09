@@ -10,3 +10,4 @@ while True:
     led.duty_u16(cnt)
     print(cnt)
     sleep(1)
+ 

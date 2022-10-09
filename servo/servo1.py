@@ -1,10 +1,10 @@
 from machine import PWM, Pin
 import time
 
-servo1 = PWM(Pin(1,Pin.OUT))
+servo1 = PWM(Pin(6,Pin.OUT))
 servo1.freq(60)
 
-servo2 = PWM(Pin(2,Pin.OUT))
+servo2 = PWM(Pin(7,Pin.OUT))
 servo2.freq(60)
 
 max_duty = 65535
