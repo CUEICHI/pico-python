@@ -1,7 +1,7 @@
 from machine import PWM, Pin
 from time import sleep
 import random
-lpin = Pin(25,Pin.OUT)
+lpin = Pin('LED',Pin.OUT)
 led = PWM(lpin)
 led.freq(100)
 

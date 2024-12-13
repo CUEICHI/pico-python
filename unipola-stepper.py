@@ -11,17 +11,19 @@ IN8 = Pin(9, Pin.OUT)
 
 pina = [IN1,IN2,IN3,IN4]
 pinb = [IN5,IN6,IN7,IN8]
-wait_us = 2000
+wait_us = 180 #130
 
 setup = [0,0,0,0]
 step1 =[[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]]
 step1_reverse =[[0,0,0,1],[0,0,1,0],[0,1,0,0],[1,0,0,0]]
 step2 = [[1,0,0,1],[1,1,0,0],[0,1,1,0],[0,0,1,1]]
 step3 = [[1,0,0,1],[1,0,0,0],[1,1,0,0],[0,1,0,0],[0,1,1,0],[0,0,1,0],[0,0,1,1],[0,0,0,1]]
+
 for i in range(4):
     pina[i].value(setup[i])
     pinb[i].value(setup[i])
     utime.sleep_us(wait_us)
+
 while True:
     for step in reversed(step3):
         for i in range(4):
