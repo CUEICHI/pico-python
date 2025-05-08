@@ -2,8 +2,8 @@ import machine
 import time
 from machine import PWM
 
-# GP28をPWMとして使います
-pwm  = PWM(machine.Pin(3, machine.Pin.OUT))
+# GP10をPWMとして使います
+pwm  = PWM(machine.Pin(10, machine.Pin.OUT))
 
 # サーボが動作可能な範囲です
 ANGLE_RANGE = 180

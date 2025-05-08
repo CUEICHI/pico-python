@@ -4,12 +4,11 @@
 			"path": "."
 		},
 		{
-			"name": "Pico (W) Remote Workspace",
+			"name": "Mpy Remote Workspace",
 			"uri": "pico:"
 		}
 	],
 	"settings": {
-		"python.languageServer": "Pylance",
-		"micropico.syncFolder": ""
+		"python.languageServer": "Pylance"
 	}
 }
