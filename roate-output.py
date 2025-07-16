@@ -33,3 +33,4 @@ sw.irq(trigger=Pin.IRQ_FALLING, handler=sw_input)
 # メインループは何もしない（割り込み動作）
 while True:
     time.sleep(1)
+
